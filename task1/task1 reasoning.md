@@ -1,6 +1,6 @@
 # Initialization
 
-We begin by evaluating the structure of the tree with a case expression. For a node without any children, the depth is defined as 1. This serves as the base case, ensuring that an isolated node or an empty tree returns a depth of 1, which aligns with the definition of tree depth.
+We begin by evaluating the structure of the tree with a case expression. For a node without any children, the depth is defined as 1. This serves as the base case, ensuring that a leaf node  returns a depth of 1, which aligns with the definition of tree depth.
 
 # Maintenance:
 
@@ -12,7 +12,7 @@ If the tree has a root, a left child, and a right child, it calls max_depth recu
 
 #### 2. Root with One Child:
 
-If the tree has only a root and one child, it calls max_depth recursively on the left child and returns 1 + depth of left subtree. This ensures that the depth calculation is accurate for trees missing the right child.
+If the tree has only a root and one child, it calls max_depth recursively on the child and returns depth of child subtree incremented by one. This ensures that the depth calculation is accurate for trees having one child.
 
 #### 3. Root Only:
 
