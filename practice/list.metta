@@ -37,6 +37,6 @@
 !(Tests for index function)
 
 !(Index NilVal 3); should give -1
-!(Index (List 1 (List 2 (List 3 (List 4 NilVal)))) 1) ; should give 4
-!(Index (List 1 (List 2 (List 3 (List 4 NilVal)))) 4) ; should give 4
+!(Index (List 1 (List 2 (List 3 (List 4 NilVal)))) 1) ; should give 0
+!(Index (List 1 (List 2 (List 3 (List 4 NilVal)))) 4) ; should give 3
 !(Index (List 1 (List 2 (List 3 (List 4 NilVal)))) 5) ; should give -1
